@@ -1,0 +1,64 @@
+{
+  "students": [
+    {
+      "class": "软工151",
+      "name": "林海瑞",
+      "teacherRes": 1000,
+      "adminRes": -1
+    },
+    {
+      "class": "软工152",
+      "name": "林海瑞",
+      "teacherRes": 2000,
+      "adminRes": -1
+    },
+    {
+      "class": "软工142",
+      "name": "林海瑞",
+      "teacherRes": 1200,
+      "adminRes": 1000
+    },
+    {
+      "class": "软工141",
+      "name": "林海瑞",
+      "teacherRes": 1000,
+      "adminRes": -1
+    },
+    {
+      "class": "软工152",
+      "name": "林海瑞",
+      "teacherRes": 1555,
+      "adminRes": 1900
+    },
+    {
+      "class": "软工152",
+      "name": "林海瑞",
+      "teacherRes": 1000,
+      "adminRes": 1000
+    },
+    {
+      "class": "软工152",
+      "name": "林海瑞",
+      "teacherRes": 1222,
+      "adminRes": -1
+    },
+    {
+      "class": "软工152",
+      "name": "林海瑞",
+      "teacherRes": 1290,
+      "adminRes": 2000
+    },
+    {
+      "class": "软工152",
+      "name": "林海瑞",
+      "teacherRes": 1000,
+      "adminRes": 500
+    },
+    {
+      "class": "软工152",
+      "name": "林海瑞",
+      "teacherRes": 1000,
+      "adminRes": 1200
+    }
+  ]
+}

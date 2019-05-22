@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+/*<!--国家助学金申请表:stipend-form-->*/
+
+/*表单样式*/
+span.warn {
+    font-size: .1vmax;
+    color: red;
+    margin-left: 2%;
+}
+
+textarea {
+	resize: none;
+}
+input[type='button'] {
+	cursor: pointer;
+}
+.stipend_form, .questionary_form, .admit_apply_form {
+	font-family:"宋体";	
+	margin:20px 10px 5px 10px;
+	width:750px;
+	height:auto;
+	color:#1B2737;
+	border-bottom:#587ED1 2px solid;
+	padding-bottom:20px;	
+}
+
+/*表头样式*/
+.form_top {
+	width:auto;
+	height:100px;
+	background:#C4E4EF;
+	padding-top:10px;
+}
+
+img.star {
+	width:10px;
+	height:10px;
+}
+
+.point {
+	font-size:12px;
+	font-weight:normal;
+}
+
+#stipend_school, #stipend_profession {
+	width:350px;
+}
+
+/*input标签的样式*/
+input {
+    padding: 5px;
+	border:1px #CCC solid;
+	font-family:"宋体";
+	font-size:12px;
+}
+
+/*#stipend-school, #stipend-academic, #stipend-profession, #stipend-class {
+	margin-left:10px;
+	float:left;
+	margin-top:5px;
+	font-size:14px;
+	font-weight:700;
+}*/
+
+.table_left, .table_right {
+	font-family:"宋体";
+	font-size:12px;
+	font-weight:600;
+	color:#2B3953;
+}
+
+.table_left {
+	text-align:right;
+	width: 50%;
+}
+.table_right {
+	text-align:left;
+	width: 50%;
+}
+
+/*表单内容*/
+.horizonbar {
+	position:relative;
+	width:auto;
+	height:auto;
+	background:#F3F3F3;
+	margin-top:20px;
+	padding:10px 10px 10px 10px;
+	border-bottom:#999999 1px solid;
+	color:#000;
+	font-weight:700;
+	font-size:14px;
+	text-align:left;
+}
+
+.form_offset {
+	margin:20px 10px 10px -200px;
+}
+table {
+	line-height:30px;
+}
+.submit {
+	width:150px;
+	height:30px;
+	background:#587ED1;
+	color:#FFF;
+	margin-top:20px;
+	font-family:"宋体";
+	font-size:14px;
+	font-weight:bold;
+	border-radius:6px;
+}
+
+.apply_reason {
+	margin-top:20px;
+	resize: none;
+}
+
+.do_flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.familyinfo_bar{
+	width: 3%;
+	height: 3%;
+	border: 1px solid #999999;
+	text-align: center;
+}
+
+<!--杭州师范大学学生及家庭情况调查表 questionary-form-->

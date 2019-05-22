@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.workstudy.ssm.dao.FamilyMemberDao">
+
+    <resultMap id="FamilyMemberBaseMap" type="com.workstudy.ssm.model.FamilyMember">
+        <id column="studentId" property="studentId" jdbcType="VARCHAR"/>
+        <id column="name" property="name" jdbcType="VARCHAR"/>
+        <id column="age" property="age" jdbcType="INTEGER"/>
+        <id column="appellation" property="appellation" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="getTable" resultMap="FamilyMemberBaseMap">
+        SELECT *
+        FROM family_member
+        WHERE studentId = #{member.studentId} AND name = #{member.name} AND age = #{member.age} AND appellation = #{member.appellation}
+    </select>
+
+
+    <select id="getMembersByStId" resultMap="FamilyMemberBaseMap">
+        SELECT *
+        FROM family_member
+        WHERE studentId = #{studentId}
+    </select>
+
+    <insert id="createTable" parameterType="com.workstudy.ssm.model.FamilyMember">
+        INSERT INTO family_member
+        VALUES (#{member.studentId},#{member.name},#{member.age},#{member.appellation},#{member.workCeremony},#{member.health},#{member.study})
+    </insert>
+
+    <delete id="deleteMembersByStId">
+        DELETE FROM family_member
+        WHERE studentId = #{studentId}
+    </delete>
+
+</mapper>

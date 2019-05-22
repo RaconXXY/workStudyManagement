@@ -1,0 +1,156 @@
+
+#content {
+    /*background-color: red;*/
+    position: relative;
+    top: 60px;
+    left: 20px;
+    width: 100%;
+    margin-bottom: 90px;
+
+}
+
+.guide .guide-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.guide .guide-context {
+    margin: 0 auto;
+    margin-top: 15px;
+
+    width: 90%;
+
+}
+.guide-context table {
+    width: 100%;
+    border: 1px solid #0f0f0f;
+    border-bottom: none;
+    border-right:none;
+    border-collapse: collapse;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.guide-context th,td{
+    border-bottom: 1px solid #0f0f0f;
+    border-right: 1px solid #0f0f0f;
+    vertical-align: middle;
+    padding: 5px;
+}
+.guide-context th{
+    font-weight: bold;
+}
+.guide-context th:first-child {
+    width: 10%;
+}
+.guide-context td:first-child {
+    text-align: center;
+}
+.guide-context th:nth-child(2){
+    width: 15%;
+}
+.guide-context th:nth-child(3){
+    width: 10%;
+}
+.guide-context td:nth-child(3){
+    text-align: center;
+}
+.guide-context th:nth-child(4){
+    width: 40%;
+}
+.guide-context tr:last-child td {
+    text-align: left;
+}
+
+#content .assess .status-select,
+#content .assess .class-select
+{
+    width: 30%;
+    margin: 2%;
+    height:30px;
+}
+#content .assess .status-select {
+}
+
+#content .assess .record {
+    width: 100%;
+    /*background-color: red;*/
+    border-collapse: collapse;
+}
+#content .assess .record tr {
+    height: 40px;
+}
+#content .assess .record tr th,
+#content .assess .record tr td {
+    width: 16.7%;
+    border: 1px solid #999;
+    vertical-align: middle;
+    min-height:0;
+    text-align: center;
+}
+#content .assess .record tr td a {
+    text-decoration: underline;
+}
+
+#content .assess .result-select {
+    width: 90%;
+    height: 30px;
+}
+#content .assess .result-input {
+    width: 70%;
+    text-align: center;
+}
+#content .assess button.submit {
+    width: 80%;
+    height:30px;
+    border-radius: 10px;
+    background-color: #eee;
+    border: 1px solid #999;
+    outline: none;
+    cursor: pointer;
+}
+#content .assess button.submit:hover {
+    border: 1px dashed #333;
+}
+
+.page-travel {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+}
+.page-travel ul li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    width: 1.5em;
+}
+.page-travel ul li.selected {
+    font-weight: bold;
+}
+#content .library .status-span {
+    margin-left: 40%;
+}
+#content .library .class-select {
+    width: 30%;
+    height: 30px;
+}
+#content .library .record {
+    width: 100%;
+    /*background-color: red;*/
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+#content .library .record tr {
+    height: 40px;
+}
+#content .library .record th,
+#content .library .record td {
+    border: 1px solid #999;
+    vertical-align: middle;
+    min-height:0;
+    text-align: center;
+}
+#content .library .record tr td a {
+    text-decoration: underline;
+}

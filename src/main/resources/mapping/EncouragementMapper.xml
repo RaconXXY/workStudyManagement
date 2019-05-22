@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.workstudy.ssm.dao.EncouragementDao">
+
+    <resultMap id="EncouragementBaseMap" type="com.workstudy.ssm.model.Encouragement">
+        <id column="studentId" property="studentId" jdbcType="VARCHAR"/>
+        <id column="tableYear" property="tableYear" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="getTable" resultMap="EncouragementBaseMap">
+        SELECT *
+        FROM encouragement
+        WHERE studentId = #{encouragement.studentId} AND tableYear = #{encouragement.tableYear}
+    </select>
+
+    <select id="getTableByYear" resultMap="EncouragementBaseMap">
+        SELECT *
+        FROM encouragement
+        WHERE tableYear = #{createdYear}
+    </select>
+
+
+    <select id="getAllTables" resultMap="EncouragementBaseMap">
+        SELECT *
+        FROM encouragement
+    </select>
+
+    <select id="getTableByStuId" resultMap="EncouragementBaseMap">
+        SELECT *
+        FROM encouragement
+        WHERE studentId = #{studentId}
+    </select>
+
+    <insert id="createTable" parameterType="com.workstudy.ssm.model.Encouragement">
+        INSERT INTO encouragement
+        VALUES (#{encouragement.studentId},#{encouragement.tableYear},#{encouragement.sex},#{encouragement.birthYear},
+        #{encouragement.birthMonth},#{encouragement.nation},#{encouragement.startYear},#{encouragement.startMonth},
+        #{encouragement.politicalStatus},#{encouragement.phone},#{encouragement.identityCardId},#{encouragement.grade},
+        #{encouragement.courseNum},#{encouragement.passNum},#{encouragement.rank},#{encouragement.residence},
+        #{encouragement.incomeSource},#{encouragement.incomePerMonth},#{encouragement.peopleNumber},
+        #{encouragement.address},#{encouragement.postcode},#{encouragement.reason},#{encouragement.teacherResult},
+        #{encouragement.adminResult})
+    </insert>
+
+    <delete id="deleteTable" parameterType="com.workstudy.ssm.model.Encouragement">
+        DELETE FROM encouragement
+        WHERE studentId = #{encouragement.studentId} AND tableYear = #{encouragement.tableYear}
+    </delete>
+
+    <delete id="deleteTableByInfo" parameterType="com.workstudy.ssm.model.Encouragement">
+        DELETE FROM encouragement
+        WHERE studentId = #{studentId} AND tableYear = #{tableYear}
+    </delete>
+
+    <update id="changeTable">
+        UPDATE encouragement
+        SET teacherResult = #{result}
+        WHERE studentId = #{studentId} AND tableYear = #{tableYear}
+    </update>
+
+    <update id="changeAdminRes">
+        UPDATE encouragement
+        SET adminResult = #{result}
+        WHERE studentId = #{studentId} AND tableYear = #{tableYear}
+    </update>
+
+</mapper>

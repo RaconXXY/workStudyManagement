@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.workstudy.ssm.dao.HelpDao">
+
+    <resultMap id="HelpBaseMap" type="com.workstudy.ssm.model.Help">
+        <id column="studentId" property="studentId" jdbcType="VARCHAR"/>
+        <id column="helpName" property="helpName" jdbcType="VARCHAR"/>
+        <id column="helpNumber" property="helpNumber" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <select id="getTable" resultMap="HelpBaseMap">
+        SELECT *
+        FROM help
+        WHERE studentId = #{help.studentId} AND helpName = #{help.helpName} AND helpNumber = #{help.helpNumber}
+    </select>
+
+    <select id="getHelpsByStId" resultMap="HelpBaseMap">
+        SELECT *
+        FROM help
+        WHERE studentId = #{studentId}
+    </select>
+
+    <insert id="createTable" parameterType="com.workstudy.ssm.model.Help">
+        INSERT INTO help
+        VALUES (#{help.studentId},#{help.helpName},#{help.helpNumber})
+    </insert>
+
+    <delete id="deleteHelpByStId">
+        DELETE FROM help
+        WHERE studentId = #{studentId}
+    </delete>
+
+</mapper>

@@ -1,0 +1,25 @@
+/target/
+/src/main/webapp/WEB-INF/lib/bower_components/
+/logs/
+
+# Maven
+/release.properties
+
+# Eclipse
+/.classpath
+/.project
+/.externalToolBuilders/
+/.metadata
+/.settings
+/.peoject
+/.springBeans
+
+# IntelliJ IDEA
+/*.iml
+/*.ipr
+/*.iws
+/.idea/
+/out/
+
+# Mac
+/.DS_Store

@@ -1,0 +1,25 @@
+{
+  "name": "workStudyManagement",
+  "authors": [
+    "dreamhuan <fu_kaiqi@qq.com>"
+  ],
+  "description": "work study",
+  "main": "",
+  "license": "",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "sweetalert2": "^6.6.4",
+    "wickedpicker": "^0.4.1",
+    "normalize-css": "^7.0.0",
+    "font-awesome": "FortAwesome/Font-Awesome#^4.7.0"
+  }
+}

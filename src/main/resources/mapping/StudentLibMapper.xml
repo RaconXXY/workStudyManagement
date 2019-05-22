@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.workstudy.ssm.dao.StudentLibDao">
+
+    <resultMap id="StudentLibBaseMap" type="com.workstudy.ssm.model.StudentLib">
+        <id column="studentId" property="studentId" jdbcType="VARCHAR"/>
+        <id column="tableYear" property="tableYear" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="getItemById" resultMap="StudentLibBaseMap">
+        SELECT *
+        FROM studentlib
+        WHERE studentId = #{studentId} AND tableYear = #{tableYear}
+    </select>
+
+    <select id="getAllTables" resultMap="StudentLibBaseMap">
+        SELECT *
+        FROM studentlib
+    </select>
+
+    <select id="getTablesByYear" resultMap="StudentLibBaseMap">
+        SELECT *
+        FROM studentlib
+        WHERE tableYear = #{tableYear}
+    </select>
+
+    <insert id="createItem" parameterType="com.workstudy.ssm.model.StudentLib">
+        INSERT INTO studentlib
+        VALUES (#{studentLib.studentId},#{studentLib.tableYear},#{studentLib.isLoan},#{studentLib.isWorkAndStudy},#{studentLib.awardsName},#{studentLib.awardsNumber},#{studentLib.helpsName},#{studentLib.helpsNumber},#{studentLib.other},#{studentLib.isCheckin})
+    </insert>
+
+    <delete id="delItemById" parameterType="java.lang.String">
+        DELETE
+        FROM studentlib
+        WHERE studentId = #{studentId} AND tableYear = #{tableYear}
+    </delete>
+
+</mapper>

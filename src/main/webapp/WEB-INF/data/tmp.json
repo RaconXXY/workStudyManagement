@@ -1,0 +1,96 @@
+{
+  "students": [
+    {
+      "className" : "软工151",
+      "name" : "滕飞",
+      "assessStatus" : false,
+      "result" : -1
+    },
+    {
+      "className" : "软工152",
+      "name" : "滕飞2",
+      "assessStatus" : true,
+      "result" : 0
+    },{
+      "className" : "软工142",
+      "name" : "滕飞3",
+      "assessStatus" : true,
+      "result" : 2
+    },{
+      "className" : "软工141",
+      "name" : "滕飞4",
+      "assessStatus" : true,
+      "result" : 1
+    },{
+      "className" : "软工142",
+      "name" : "滕飞5",
+      "assessStatus" : true,
+      "result" : 2
+    },{
+      "className" : "软工141",
+      "name" : "滕飞6",
+      "assessStatus" : false,
+      "result" : 0
+    },{
+      "className" : "软工151",
+      "name" : "滕飞7",
+      "assessStatus" : false,
+      "result" : 1
+    },{
+      "className" : "软工152",
+      "name" : "滕飞8",
+      "assessStatus" : false,
+      "result" : 2
+    },{
+      "className" : "软工151",
+      "name" : "滕飞9",
+      "assessStatus" : false,
+      "result" : 2
+    },{
+      "className" : "软工142",
+      "name" : "滕飞10",
+      "assessStatus" : false,
+      "result" : 0
+    },{
+      "className" : "软工141",
+      "name" : "滕飞11",
+      "assessStatus" : false,
+      "result" : -1
+    },{
+      "className" : "软工142",
+      "name" : "滕飞12",
+      "assessStatus" : false,
+      "result" : 0
+    },{
+      "className" : "软工151",
+      "name" : "滕飞13",
+      "assessStatus" : false,
+      "result" : 0
+    },{
+      "className" : "软工152",
+      "name" : "滕飞14",
+      "assessStatus" : false,
+      "result" : 1
+    },{
+      "className" : "软工152",
+      "name" : "滕飞15",
+      "assessStatus" : false,
+      "result" : 3
+    },{
+      "className" : "软工152",
+      "name" : "滕飞16",
+      "assessStatus" : false,
+      "result" : 0
+    },{
+      "className" : "软工152",
+      "name" : "滕飞17",
+      "assessStatus" : false,
+      "result" : 2
+    },{
+      "className" : "软工152",
+      "name" : "滕飞18",
+      "assessStatus" : false,
+      "result" : 0
+    }
+  ]
+}

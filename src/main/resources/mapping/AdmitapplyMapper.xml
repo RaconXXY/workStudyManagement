@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.workstudy.ssm.dao.AdmitapplyDao">
+
+    <resultMap id="AdmitapplyBaseMap" type="com.workstudy.ssm.model.Admitapply">
+        <id column="studentId" property="studentId" jdbcType="VARCHAR"/>
+        <id column="tableYear" property="tableYear" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="getTable" resultMap="AdmitapplyBaseMap">
+        SELECT *
+        FROM admitapply
+        WHERE studentId = #{admitapply.studentId} AND tableYear = #{admitapply.tableYear}
+    </select>
+
+    <select id="getTableByInfo" resultMap="AdmitapplyBaseMap">
+        SELECT *
+        FROM admitapply
+        WHERE studentId = #{userId} AND tableYear = #{tableYear}
+    </select>
+
+    <select id="getAllTables" resultMap="AdmitapplyBaseMap">
+        SELECT *
+        FROM admitapply
+    </select>
+
+    <select id="getTableByStId" resultMap="AdmitapplyBaseMap">
+        SELECT *
+        FROM admitapply
+        WHERE studentId = #{studentId}
+    </select>
+
+    <insert id="createTable" parameterType="com.workstudy.ssm.model.Admitapply">
+        INSERT INTO admitapply
+        VALUES (#{admitapply.studentId},#{admitapply.tableYear},#{admitapply.sex},#{admitapply.birthYear},
+                #{admitapply.birthMonth},#{admitapply.nation},#{admitapply.politicalStatus},#{admitapply.birthPlace},
+                #{admitapply.phone},#{admitapply.isContinue},#{admitapply.isRender},#{admitapply.workAndStudy},
+                #{admitapply.socialActivity},#{admitapply.finance},#{admitapply.otherFinance},#{admitapply.financeNumber},
+                #{admitapply.reason},#{admitapply.teacherResult},#{admitapply.adminResult})
+    </insert>
+
+    <delete id="deleteTable" parameterType="com.workstudy.ssm.model.Admitapply">
+        DELETE FROM admitapply
+        WHERE studentId = #{admitapply.studentId} AND tableYear = #{admitapply.tableYear}
+    </delete>
+
+    <delete id="deleteTableByInfo" parameterType="com.workstudy.ssm.model.Admitapply">
+        DELETE FROM admitapply
+        WHERE studentId = #{studentId} AND tableYear = #{tableYear}
+    </delete>
+
+
+    <update id="changeTable">
+        UPDATE admitapply
+        SET teacherResult = #{result}
+        WHERE studentId = #{studentId} AND tableYear = #{tableYear}
+    </update>
+
+    <update id="changeAdminRes">
+        UPDATE admitapply
+        SET adminResult = #{result}
+        WHERE studentId = #{studentId} AND tableYear = #{tableYear}
+    </update>
+
+</mapper>

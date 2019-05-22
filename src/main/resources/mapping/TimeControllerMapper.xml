@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.workstudy.ssm.dao.TimeControlDao">
+
+    <resultMap id="TimeControlBaseMap" type="com.workstudy.ssm.model.TimeControl">
+    </resultMap>
+    
+    <delete id="delTime">
+        DELETE FROM timecontrol
+    </delete>
+    
+    <insert id="createTime">
+        insert into timecontrol (admitApplyTeacher, stipendTeacher, encouragementTeacher, scholarshipTeacher, discountFeeTeacher, admitApplySt, questionarySt, stipendSt, encouragementSt, scholarshipSt, discountFeeSt)
+        values (#{table.admitApplyTeacher},#{table.stipendTeacher},#{table.encouragementTeacher},#{table.scholarshipTeacher},#{table.discountFeeTeacher},#{table.admitApplySt},#{table.questionarySt},#{table.stipendSt},#{table.encouragementSt},#{table.scholarshipSt},#{table.discountFeeSt});
+    </insert>
+
+    <select id="getTime" resultMap="TimeControlBaseMap">
+        SELECT * FROM timecontrol
+    </select>
+
+</mapper>

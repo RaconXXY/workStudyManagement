@@ -1,0 +1,76 @@
+{
+  "students" : [
+    {
+      "className" : "软工151",
+      "name" : "滕飞",
+      "assessStatus" : false,
+      "result" : -1
+    },
+    {
+      "className" : "软工152",
+      "name" : "滕飞2",
+      "assessStatus" : true,
+      "result" : 1000.00
+    },
+    {
+      "className" : "软工142",
+      "name" : "滕飞",
+      "assessStatus" : false,
+      "result" : -1
+    },
+    {
+      "className" : "软工141",
+      "name" : "滕飞2",
+      "assessStatus" : true,
+      "result" : 1200.00
+    },
+    {
+      "className" : "软工151",
+      "name" : "滕飞",
+      "assessStatus" : false,
+      "result" : -1
+    },
+    {
+      "className" : "软工152",
+      "name" : "滕飞2",
+      "assessStatus" : true,
+      "result" : 1222.00
+    },
+    {
+      "className" : "软工142",
+      "name" : "滕飞",
+      "assessStatus" : false,
+      "result" : 1999
+    },
+    {
+      "className" : "软工141",
+      "name" : "滕飞2",
+      "assessStatus" : true,
+      "result" : 1000.00
+    },
+    {
+      "className" : "软工151",
+      "name" : "滕飞",
+      "assessStatus" : false,
+      "result" : 3112
+    },
+    {
+      "className" : "软工152",
+      "name" : "滕飞2",
+      "assessStatus" : true,
+      "result" : 1120.00
+    },
+    {
+      "className" : "软工142",
+      "name" : "滕飞",
+      "assessStatus" : false,
+      "result" : -1
+    },
+    {
+      "className" : "软工141",
+      "name" : "滕飞2",
+      "assessStatus" : true,
+      "result" : 1000.00
+    }
+  ]
+}

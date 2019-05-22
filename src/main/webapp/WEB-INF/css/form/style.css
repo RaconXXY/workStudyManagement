@@ -1,0 +1,285 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: #F5F5F5;
+}
+.index_left {
+	background: #B8D0F1;
+	width: 200px;
+	height:900px;
+	font-family: "宋体";
+	font-size: 14px;
+	margin-left: -600px;
+	border: 0px;
+
+}
+
+.entry {
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #4778C7;
+	text-align: left;
+}
+
+
+.index_right {
+	background: #ffffff;
+	width: 600px;
+	height: 700px;
+	font-family: "宋体";
+	border: 0px;
+	margin-top: -900px;
+	margin-left:200px;
+}
+
+
+
+
+TD {
+	LINE-HEIGHT: 1.5; FONT-FAMILY: "宋体"; FONT-SIZE: 12px
+}
+.position {
+	POSITION: relative; TOP: 2px
+}
+.whiteshdaow {
+	FILTER: DropShadow(Color=#ffffff, OffX=1, OffY=1, Positive=100)
+}
+.lefttitle {
+	POSITION: relative; FILTER: DropShadow(Color=#ffffff, OffX=1, OffY=1, Positive=100); COLOR: #1f5299; FONT-SIZE: 14px; FONT-WEIGHT: bold; TOP: 2px
+}
+.input2 {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 2px solid; BACKGROUND-COLOR: #ffffff; HEIGHT: 18px; COLOR: #000000; FONT-SIZE: 14px; BORDER-TOP: #cccccc 2px solid; BORDER-RIGHT: #cccccc 2px solid
+}
+.link {
+	BORDER-BOTTOM: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; FONT-SIZE: 11px; BORDER-TOP: #ffffff 1px solid; BORDER-RIGHT: #ffffff 1px solid
+}
+.middle_title {
+	POSITION: relative; FILTER: DropShadow(Color=#1F5299, OffX=1, OffY=1, Positive=100); COLOR: #ffffff; FONT-SIZE: 14px; FONT-WEIGHT: bold; TOP: 2px
+}
+.border {
+	BORDER-BOTTOM: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-RIGHT: #ffffff 1px solid
+}
+.border2 {
+	BORDER-BOTTOM: #a6c4ed 1px solid; BORDER-LEFT: #a6c4ed 1px solid; BORDER-TOP: #a6c4ed 1px solid; BORDER-RIGHT: #a6c4ed 1px solid
+}
+.2menu_selected {
+	COLOR: #cc5500; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.main_title {
+	FILTER: DropShadow(Color=#ffffff, OffX=1, OffY=1, Positive=100); COLOR: #1f5299; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+.txt_title1 {
+	FILTER: DropShadow(Color=#ffffff, OffX=1, OffY=1, Positive=100); COLOR: #1f5299; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+.succ {
+	COLOR: #cc5500; FONT-SIZE: 24px; FONT-WEIGHT: bold
+}
+.search1 {
+	BACKGROUND-IMAGE: url(../Image/search.gif); BORDER-BOTTOM: black 0px solid; BORDER-LEFT: black 0px solid; BACKGROUND-COLOR: #3f6ba7; MARGIN-TOP: 0px; WIDTH: 30px; MARGIN-BOTTOM: 0px; HEIGHT: 22px; COLOR: #000000; MARGIN-LEFT: 0px; VERTICAL-ALIGN: top; BORDER-TOP: black 0px solid; BORDER-RIGHT: black 0px solid
+}
+.search2 {
+	BACKGROUND-IMAGE: url(../Image/search.gif); BORDER-BOTTOM: black 0px solid; BORDER-LEFT: black 0px solid; BACKGROUND-COLOR: #ffffff; MARGIN-TOP: 0px; WIDTH: 30px; MARGIN-BOTTOM: 0px; HEIGHT: 22px; COLOR: #000000; MARGIN-LEFT: 0px; VERTICAL-ALIGN: top; BORDER-TOP: black 0px solid; BORDER-RIGHT: black 0px solid
+}
+.submit1 {
+	BACKGROUND-IMAGE: url(../Image/submit1.gif); BORDER-BOTTOM: black 0px solid; BORDER-LEFT: black 0px solid; BACKGROUND-COLOR: #c2d6f2; WIDTH: 60px; HEIGHT: 20px; COLOR: #000000; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-TOP: black 0px solid; BORDER-RIGHT: black 0px solid; PADDING-TOP: 4px
+}
+.submit2 {
+	BACKGROUND-IMAGE: url(../Image/submit1.gif); BORDER-BOTTOM: black 0px solid; BORDER-LEFT: black 0px solid; BACKGROUND-COLOR: #f2f8ff; WIDTH: 60px; HEIGHT: 20px; COLOR: #000000; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-TOP: black 0px solid; BORDER-RIGHT: black 0px solid; PADDING-TOP: 4px
+}
+.INPUT {
+	BORDER-BOTTOM-COLOR: #b3b3b3; PADDING-BOTTOM: 1px; BORDER-RIGHT-WIDTH: 1px; BORDER-TOP-COLOR: #b3b3b3; PADDING-LEFT: 3px; PADDING-RIGHT: 1px; BACKGROUND: #ffffff; BORDER-TOP-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; HEIGHT: 20px; BORDER-RIGHT-COLOR: #b3b3b3; FONT-SIZE: 12px; BORDER-LEFT-COLOR: #b3b3b3; BORDER-LEFT-WIDTH: 1px; PADDING-TOP: 3px
+}
+A:visited {
+	COLOR: #799bc8; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #4157a0; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #4157a0; TEXT-DECORATION: underline
+}
+.white {
+	POSITION: relative; FONT-WEIGHT: bold; TEXT-DECORATION: none; TOP: 2px
+}
+A.white:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.white:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.white:active {
+	COLOR: #e5cb45; TEXT-DECORATION: none
+}
+A.white:hover {
+	COLOR: #e5cb45; TEXT-DECORATION: none
+}
+.english {
+	LINE-HEIGHT: 1.5; FONT-FAMILY: "arial"; COLOR: #6c6c6c; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.english:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.english:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.english:active {
+	COLOR: #e5cb45; TEXT-DECORATION: none
+}
+A.english:hover {
+	COLOR: #e5cb45; TEXT-DECORATION: none
+}
+.menueg {
+	POSITION: relative; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none; TOP: 2px
+}
+A.menueg:visited {
+	COLOR: #d07408; TEXT-DECORATION: none
+}
+A.menueg:link {
+	COLOR: #d07408; TEXT-DECORATION: none
+}
+A.menueg:active {
+	COLOR: #eea22c; TEXT-DECORATION: none
+}
+A.menueg:hover {
+	COLOR: #eea22c; TEXT-DECORATION: underline
+}
+.menu {
+	POSITION: relative; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none; TOP: 2px
+}
+A.menu:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.menu:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.menu:active {
+	COLOR: #cc5500; TEXT-DECORATION: none
+}
+A.menu:hover {
+	COLOR: #cc5500; TEXT-DECORATION: none
+}
+.2menu {
+	FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.2menu:visited {
+	COLOR: #1f5299; TEXT-DECORATION: none
+}
+A.2menu:link {
+	COLOR: #1f5299; TEXT-DECORATION: none
+}
+A.2menu:active {
+	COLOR: #cc5500; TEXT-DECORATION: none
+}
+A.2menu:hover {
+	COLOR: #cc5500; TEXT-DECORATION: none
+}
+.bottom {
+	POSITION: relative; FONT-SIZE: 12px; TEXT-DECORATION: none; TOP: 2px
+}
+A.bottom:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.bottom:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.bottom:active {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.bottom:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.more2 {
+	FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A.more2:visited {
+	COLOR: #cc5500; TEXT-DECORATION: none
+}
+A.more2:link {
+	COLOR: #cc5500; TEXT-DECORATION: none
+}
+A.more2:active {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+A.more2:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.more {
+	FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A.more:visited {
+	COLOR: #808080; TEXT-DECORATION: none
+}
+A.more:link {
+	COLOR: #808080; TEXT-DECORATION: none
+}
+A.more:active {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+A.more:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.email {
+	FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.email:visited {
+	COLOR: #1f5299; TEXT-DECORATION: none
+}
+A.email:link {
+	COLOR: #1f5299; TEXT-DECORATION: none
+}
+A.email:active {
+	COLOR: #cc5500; TEXT-DECORATION: underline
+}
+A.email:hover {
+	COLOR: #cc5500; TEXT-DECORATION: underline
+}
+.page {
+	TEXT-DECORATION: none
+}
+A.page:visited {
+	COLOR: #808080; TEXT-DECORATION: none
+}
+A.page:link {
+	COLOR: #808080; TEXT-DECORATION: none
+}
+A.page:active {
+	COLOR: #1f5299; TEXT-DECORATION: underline
+}
+A.page:hover {
+	COLOR: #1f5299; TEXT-DECORATION: underline
+}
+BODY {
+	SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-FACE-COLOR: #8ab0e5; SCROLLBAR-DARKSHADOW-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #4157a0; SCROLLBAR-TRACK-COLOR: #c6daf7; SCROLLBAR-3DLIGHT-COLOR: #e5eeff
+}
+.down {
+	COLOR: #5285cc; TEXT-DECORATION: none
+}
+A.down:visited {
+	COLOR: #5285cc; TEXT-DECORATION: none
+}
+A.down:link {
+	COLOR: #5285cc; TEXT-DECORATION: none
+}
+A.down:active {
+	COLOR: #5285cc; TEXT-DECORATION: underline
+}
+A.down:hover {
+	COLOR: #ff6a00; TEXT-DECORATION: underline
+}
+A.check:visited {
+	COLOR: #5285cc; TEXT-DECORATION: underline
+}
+A.check:link {
+	COLOR: #5285cc; TEXT-DECORATION: underline
+}
+A.check:active {
+	COLOR: #5285cc; TEXT-DECORATION: underline
+}
+A.check:hover {
+	COLOR: #ff6a00; TEXT-DECORATION: underline
+}

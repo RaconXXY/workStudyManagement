@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.workstudy.ssm.dao.UserDao">
+
+    <resultMap id="UserBaseMap" type="com.workstudy.ssm.model.User">
+        <id column="userId" property="userId" jdbcType="VARCHAR"/>
+        <result column="password" property="password" jdbcType="VARCHAR"/>
+        <result column="type" property="type" jdbcType="INTEGER"/>
+        <result column="className" property="className" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="getUserById" resultMap="UserBaseMap">
+        SELECT *
+        FROM user
+        WHERE userId = #{userId}
+    </select>
+
+    <select id="getAll" resultMap="UserBaseMap">
+        SELECT *
+        FROM user
+    </select>
+
+    <insert id="createUser" parameterType="com.workstudy.ssm.model.User">
+        INSERT INTO user
+        VALUES (#{user.userId},#{user.name},#{user.password},#{user.email},#{user.phone},#{user.academy},#{user.major},#{user.className},#{user.type})
+    </insert>
+
+    <select id="getUsersByClass" resultMap="UserBaseMap" parameterType="com.workstudy.ssm.model.ClassInfo">
+        SELECT *
+        FROM user
+        WHERE academy = #{classInfo.academy} AND major = #{classInfo.major} AND  className = #{classInfo.className} AND type = 0
+    </select>
+
+    <delete id="delById" parameterType="java.lang.String">
+        DELETE FROM user
+        WHERE userId = #{studentId}
+    </delete>
+
+    <update id="resetPwdById" parameterType="java.lang.String">
+        UPDATE user
+        SET password = #{pwd}
+        WHERE userId = #{userId}
+    </update>
+
+</mapper>

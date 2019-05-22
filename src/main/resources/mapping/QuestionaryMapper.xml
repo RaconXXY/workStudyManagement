@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.workstudy.ssm.dao.QuestionaryDao">
+
+    <resultMap id="QuestionaryBaseMap" type="com.workstudy.ssm.model.Questionary">
+        <id column="studentId" property="studentId" jdbcType="VARCHAR"/>
+        <id column="tableYear" property="tableYear" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="getTable" resultMap="QuestionaryBaseMap">
+        SELECT *
+        FROM questionary
+        WHERE studentId = #{questionary.studentId} AND tableYear = #{questionary.tableYear}
+    </select>
+
+    <select id="getTableByInfo" resultMap="QuestionaryBaseMap">
+        SELECT *
+        FROM questionary
+        WHERE studentId = #{studentId} AND tableYear = #{createdYear}
+    </select>
+
+    <select id="getTableByStId" resultMap="QuestionaryBaseMap">
+        SELECT *
+        FROM questionary
+        WHERE studentId = #{studentId}
+    </select>
+
+    <insert id="createTable" parameterType="com.workstudy.ssm.model.Questionary">
+        INSERT INTO questionary
+        VALUES (#{questionary.studentId},#{questionary.tableYear},#{questionary.sex},#{questionary.birthYear},
+        #{questionary.birthMonth},#{questionary.nation},#{questionary.residence},#{questionary.isOrphan},
+        #{questionary.isDeformity},#{questionary.isSingleFamily},#{questionary.isMartyr},#{questionary.isDiffFamily},
+        #{questionary.phone},#{questionary.identityCardId},#{questionary.address},#{questionary.salaryPerYear},
+        #{questionary.indiOperPerYear},#{questionary.assetsIncome},#{questionary.agricultureIncome},
+        #{questionary.sidelineIncome},#{questionary.otherIncome},#{questionary.peopleNumber},
+        #{questionary.totalIncomePerYear},#{questionary.yearIncomePerPerson},#{questionary.workPeople},
+        #{questionary.illnessFee},#{questionary.tuition},#{questionary.accommodation},#{questionary.naturalLoss},
+        #{questionary.other})
+    </insert>
+
+    <delete id="deleteTable" parameterType="com.workstudy.ssm.model.Questionary">
+        DELETE FROM questionary
+        WHERE studentId = #{questionary.studentId} AND tableYear = #{questionary.tableYear}
+    </delete>
+
+
+</mapper>
